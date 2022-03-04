@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node esbuild.config.js"
+    "build": "node esbuild.config.js",
+    "dev": "node esbuild.config.js dev"
   },
   "keywords": [],
   "author": "",

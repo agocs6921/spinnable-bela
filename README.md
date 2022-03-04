@@ -7,7 +7,7 @@ Bela is really cool
 ```
 npm install
 ```
-## To install build the project
+## To build the project
 ---
 ```
 npm run build

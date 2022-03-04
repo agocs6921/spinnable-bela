@@ -1,5 +1,8 @@
 const { build } = require("esbuild");
 const { sassPlugin } = require("esbuild-sass-plugin");
+const { argv } = require("process");
+
+const ISDEV = argv[2] === "dev";
 
 (async () => {
     try {
@@ -14,8 +17,8 @@ const { sassPlugin } = require("esbuild-sass-plugin");
             ],
             bundle: true,
             minify: true,
-            sourcemap: true,
-            watch: true,
+            sourcemap: ISDEV,
+            watch: ISDEV,
             platform: "browser"
         });
     } catch(err) {}
